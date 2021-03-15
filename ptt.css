@@ -1,0 +1,112 @@
+.bbs-content{
+	font-family: Myuppy;
+	color: #FFFFFFC4;
+	line-height: 35px;
+}
+
+.bbs-screen{
+    background-color: #01037100;
+}
+body{
+	background-color: #00032dde
+}
+/* top bar */
+#topbar-container {
+	background-color: #0000 !important;
+}
+#topbar-container:hover {
+	background-color: #0000007A !important;
+}
+#logo:link, #logo:visited, #logo{
+	color: #00000000;
+}
+
+/* #topbar-container:hover #logo:link, #logo:visited, #logo{
+	color: #FE0;
+} */
+#topbar > *{
+	color: #00000000;
+}
+#topbar .board{
+	color: #00000000;
+}
+#topbar-container:hover #topbar > *{
+	color: #FFCCB8;
+}
+
+/* bottom bar */
+#navigation-container{
+	color: #fff;
+	background-color: #2500D900;
+	line-height: 30px;
+}
+#navigation-container:hover{
+	color: #fff;
+	background-color: #000000A3;
+}
+#navigation a:link, #navigation a:visited {
+	background-color: #00000000;
+	color: #FFF0;	
+}
+#navigation .bar{
+	background-color: #00000000;
+}
+#navigation-container:hover #navigation a:link, #navigation a:visited {
+	color: #FFCCB8;	
+	font-size: 20px;
+	vertical-align: middle;
+}
+#navigation a:link, #navigation a:visited {
+	background-color: #FFF0;
+}
+
+/* title */
+.article-metaline {
+    padding: 0px 0px 0px 0px;
+	background-color: #da00009e;
+	border-radius: 20px;
+	height: 35px;
+}
+.article-meta-value{
+	left: -8px;
+	z-index: 0;
+	position: relative; 
+	border-radius: 10px;
+	padding-top: 3px;
+	padding-bottom: 2px;
+	padding-left: 15px;
+	padding-right: 12px;
+	background-color: #ffe8c554;
+	color: #efd493;
+}
+.article-meta-tag{
+	z-index: 100;
+	position: relative;
+	border-radius: 10px;
+	padding-top: 3px;
+	padding-bottom: 2px;
+	padding-left: 12px;
+	padding-right: 12px;
+	background-color: #fe6441;
+	color: #ffffffde;
+}
+.article-metaline-right{
+	right: -70px;
+	top: 0px;
+/* 	height: 60px; */
+	padding-top: 35px;
+	padding-bottom: 35px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 1005px;
+	background-color: #940D1B;
+	position: absolute;
+
+}
+/* .article-meta-value{
+	font-size: 50px;
+} */
+
+.b4 {
+    background-color: #00b0;
+}
