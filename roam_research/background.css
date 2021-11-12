@@ -1,0 +1,82 @@
+:root {
+  	/*1:left, 2:main, 3:right*/
+    /*--image1: url("https://i.ytimg.com/vi/4gmrHQa7fEg/maxresdefault.jpg");*/
+  	/*[imgsrc]auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=1300?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=1300?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60*/
+	--image1: url("https://media.giphy.com/media/LOXGmyPsXPT8VyAuCS/giphy.gif");
+  	/*--image2: url("https://bit.ly/3oaLzZi");*/
+  	--image2: url("https://i.imgur.com/C90lb3z.jpg");
+	/*--image3: url("https://avante.biz/wp-content/uploads/Outer-space-wallpaper-for-mac/Outer-space-wallpaper-for-mac75.jpg");*/
+  	--image3: url("https://i.imgur.com/hAcGmG3.jpg"); /*dimmed and blurred*/
+  
+    --image1-position: 35%; 
+    /*gradient: top to down*/
+  	--image1-gradient: rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4);
+    --image1-filter: saturate(1.9) contrast(1.0);
+    
+  	--image2-position: 44%; 
+    /*gradient: top to down*/
+  	--image2-gradient: rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2);
+    /*
+  	--image2-filter: saturate(1.9) contrast(1.0);
+	*/
+  
+  	--image3-position: 44%; 
+    /*gradient: top to down*/
+  	--image3-gradient: rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2);
+	/*
+  	--image3-filter: saturate(1.9) contrast(1.0);/
+  	*/
+    --divider-color: rgb(55,55,55);
+}
+
+
+
+/*------Filter------*/
+.rm-line {
+  border-top: 1px solid var(--divider-color) !important;
+}
+
+/*------Left Sidebar------*/
+.roam-body .roam-app .roam-sidebar-container {
+  	background-image: var(--image1);
+  	
+  	background-image: linear-gradient(var(--image1-gradient)), var(--image1);
+    /*
+  	filter: var(--image1-filter);
+  	*/
+    background-size: cover;
+    background-position: var(--image1-position);    
+	
+}
+
+
+/*------Main Body------*/
+.roam-body .roam-app .roam-main {
+    background-image: var(--image2);
+    
+   	background-image: linear-gradient(var(--image2-gradient)), var(--image2);
+  	/*
+  	filter: var(--image2-filter);
+  	*/
+    background-size: cover;
+    background-position: var(--image2-position);   
+}
+
+/*------Right Sidebar------*/
+
+#right-sidebar {
+    display: flex;
+    flex-direction: column;
+    transition: all 200ms ease-in;
+    background-color: var(--right-sidebar-background-color);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .05);
+   	background-image: var(--image3);
+  	
+  	background-image: linear-gradient(var(--image3-gradient)), var(--image3);
+  	
+  	/*
+  	filter: var(--image3-filter);
+  	*/
+    background-size: cover;
+    background-position: var(--image3-position);  
+}
